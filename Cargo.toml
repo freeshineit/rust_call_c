@@ -1,0 +1,3 @@
+[workspace]
+resolver = "3"
+members = ["call_c", "call_cpp", "call_c_static"]
