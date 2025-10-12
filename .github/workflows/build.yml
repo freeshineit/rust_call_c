@@ -22,6 +22,7 @@ jobs:
       run: |
         gcc -c hello.c -o hello.o
         ar rcs libhello.a hello.o
+        ls
 
     - name: Build
       run: cargo build --verbose
