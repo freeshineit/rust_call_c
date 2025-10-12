@@ -16,6 +16,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: Build C static library
+      working-directory: ./call_c_static/c_static_libs
+      run: |
+        gcc -c hello.c -o hello.o
+        ar rcs libhello.a hello.o
+
     - name: Build
       run: cargo build --verbose
-
