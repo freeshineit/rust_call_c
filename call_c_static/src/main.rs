@@ -1,6 +1,9 @@
-// #[link(name = "hello")] // 告诉编译器链接hello.o
-unsafe extern { fn hello(); }
+unsafe extern "C" {
+    fn hello();
+}
 
 fn main() {
-    unsafe { hello(); }
+    unsafe {
+        hello();
+    }
 }

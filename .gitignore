@@ -1,1 +1,25 @@
-/target
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+Cargo.lock
+
+# C/C++ 编译产物
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# 保留静态库示例所需的 .a 文件
+!call_c_static/c_static_libs/libhello.a

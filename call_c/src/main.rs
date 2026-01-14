@@ -1,5 +1,9 @@
-unsafe  extern { fn hello(); }
+unsafe extern "C" {
+    fn hello();
+}
 
 fn main() {
-    unsafe { hello(); }
+    unsafe {
+        hello();
+    }
 }
