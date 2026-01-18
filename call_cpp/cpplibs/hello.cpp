@@ -7,5 +7,5 @@ extern "C" {
 }
 
 void hello() {
-    cout << "Hello, world cpp!!!!!" << endl;
+    cout << "Hello, world c++ app!!!!!" << endl;
 }
